@@ -1,0 +1,28 @@
+{
+  "name": "@madhead_og/common",
+  "version": "1.0.7",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "./build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build*",
+    "build": "npm run clean && tsc",
+    "git": "git add . && git commit -m 'publish'",
+    "pub": "npm run git && npm version patch && npm run build && npm publish --access public"
+  },
+  "keywords": [],
+  "author": "Narek Kurghinyan <narek.kurghinyan98@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "typescript": "^5.4.5",
+    "@types/express": "^4.17.21"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1"
+  },
+  "description": ""
+}
