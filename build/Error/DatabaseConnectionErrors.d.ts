@@ -1,5 +1,5 @@
 import CustomError from "./CustomError";
-declare class DatabaseConnectionError extends CustomError {
+export declare class DatabaseConnectionError extends CustomError {
     statusCode: number;
     reason: string;
     constructor();
@@ -7,4 +7,3 @@ declare class DatabaseConnectionError extends CustomError {
         message: string;
     }[];
 }
-export default DatabaseConnectionError;
