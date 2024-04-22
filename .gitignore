@@ -129,7 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# my ignores
-
 .DS_Store
 build/
