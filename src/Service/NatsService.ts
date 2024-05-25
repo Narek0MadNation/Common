@@ -19,6 +19,7 @@ export class NatsService {
   }
 
   get client() {
+    console.log("COMMON => NATS CONFIG ===> ", this._natsConfig);
     if (!this._client) throw new Error("NATS client not initialized");
 
     return this._client;
