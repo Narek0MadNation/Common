@@ -8,3 +8,5 @@ export * from "./Error/RequestValidationError";
 export * from "./Middleware/ErrorHandler";
 export * from "./Middleware/ValidateRequest";
 export * from "./Middleware/CurrentUser";
+
+export * from "./Service/NatsService";
