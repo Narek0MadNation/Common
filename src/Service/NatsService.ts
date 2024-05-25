@@ -53,5 +53,3 @@ export class NatsService {
     if (this._client) await this._client.drain();
   }
 }
-
-export default NatsService;
